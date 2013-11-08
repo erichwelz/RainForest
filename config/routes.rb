@@ -1,7 +1,9 @@
-Rainforest::Application.routes.draw do
+  Rainforest::Application.routes.draw do
+  get "users/new"
+  get "users/create"
   resources :products
-  root :to => "products#index"
-end
+  resources :users, :only => [:new, :create]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
