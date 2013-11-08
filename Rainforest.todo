@@ -1,0 +1,13 @@
+
+Make MVP for products: index, show, new,edit (.html.erb)
+
+Create new product to Test
+
+Test index, show, new,edit (.html.erb)
+
+
+Fix show.erb to display price/ description
+
+Fix Delete to redirect to main after deletion
+
+
