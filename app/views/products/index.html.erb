@@ -2,7 +2,7 @@
 <%= link_to "New Product", "/products/new" %>
 
 <% @products.each do |product| %>
-  <%= product[:name] %>
+  <%= product[:name] %><%= product.formatted_price %> 
 
 <% end %>
 
