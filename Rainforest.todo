@@ -10,4 +10,6 @@ Test index, show, new,edit (.html.erb)
 
 Fix show.erb to display price/ description
 
-Fix product to redirect to main after deletion
+Fix product delete to redirect to main after deletion
+
+Fix product edit
