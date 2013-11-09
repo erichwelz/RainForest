@@ -1,4 +1,4 @@
-DONE TIL 9. added flashing alerts; next up app/biews/layours/application.html.erb
+DONE TIL before 10
 
 
 Make MVP for products: index, show, new,edit (.html.erb)
@@ -10,6 +10,4 @@ Test index, show, new,edit (.html.erb)
 
 Fix show.erb to display price/ description
 
-Fix Delete to redirect to main after deletion
-
-
+Fix product to redirect to main after deletion
