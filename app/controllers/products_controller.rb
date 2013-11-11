@@ -32,7 +32,7 @@ class ProductsController < ApplicationController
   def update
     @product = Product.find(params[:id])
 
-    if @product.update_attributes(params[:product])
+    if @product.update_attributes(product_params)
       redirect_to product_path(@product)
     else
       render :edit
@@ -42,7 +42,7 @@ class ProductsController < ApplicationController
   def destroy
     @product = Product.find(params[:id])
     @product.destroy
-    redirect_to product_path
+    redirect_to products_path
   end
 
   private

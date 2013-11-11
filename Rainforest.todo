@@ -1,15 +1,14 @@
-DONE TIL before 10
+Done til start of 13 (adding authorization)
+https://github.com/bitmakerlabs/rainforest_rails_4/wiki/Tutorial
 
 
+Todo:
+Re-factor at end of step 12
+
+Done:
 Make MVP for products: index, show, new,edit (.html.erb)
+Test
 
-Create new product to Test
+Product show.erb displays price description 
 
-Test index, show, new,edit (.html.erb)
-
-
-Fix show.erb to display price/ description
-
-Fix product delete to redirect to main after deletion
-
-Fix product edit
+Product index.erb to display product :name :price, link_to product_path

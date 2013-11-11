@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_secure_password
-  has_many :reviws
+  has_secure_password #automatically creates accessible :password, :password_confirmation
+  has_many :reviews
   has_many :products, :through => :reviews
 end
