@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  def ensured_logged_in
+  def ensure_logged_in
     unless current_user
       flash[:alert] = "Please log in"
       redirect_to_new_session_path
