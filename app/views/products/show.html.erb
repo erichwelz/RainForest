@@ -10,15 +10,13 @@
 
 <% if current_user %>
 
-  <h3>Reviews</h3>
-
-  <p>Reviews for <%= @product.name %></p>
+  <h3>Reviews for <%= @product.name %></h3>
 
   <% @product.reviews.each do |review| %>
 
     <div class="review">
       <p>
-          <%= review.comment %>
+          <%= link_to review.comment, "#{product_path}/reviews/#{review.id}" %>
           <br>
           <% if review.user != nil %>
             <em> by <%= review.user.name %></em>

@@ -1,9 +1,10 @@
 Done til start of 13 (adding authorization)
 https://github.com/bitmakerlabs/rainforest_rails_4/wiki/Tutorial
 
-
 Todo:
-Re-factor at end of step 12
+
+Bootstrap CSS the appl. ala Hartl Tutorial
+
 
 Done:
 Make MVP for products: index, show, new,edit (.html.erb)
@@ -12,3 +13,5 @@ Test
 Product show.erb displays price description 
 
 Product index.erb to display product :name :price, link_to product_path
+
+Added Review individual view/edit/destroy

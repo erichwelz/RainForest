@@ -3,12 +3,18 @@ class ReviewsController < ApplicationController
   before_filter :ensure_logged_in, :only => [:edit, :create, :show, :update, :destroy]
 
   def show
-    @review = Review.find(params[:id])
+  @review = Review.find(params[:id])
   end
 
   def create
-    @review = @product.reviews.build(review_params)
-    @review.user_id = current_user.id
+    #@review = @product.reviews.build(review_params)
+    @review = Review.new( 
+      :comment => params[:review][:comment],
+      :product_id => @product.id,
+      :user_id => current_user.id
+      )
+
+    #@review.user_id = current_user.id
 
     if @review.save
       redirect_to product_path(@product), notice: 'Review created successfully'
@@ -20,6 +26,26 @@ class ReviewsController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
+    redirect_to product_path(@product)
+  end
+
+  def new
+  @review = Review.new
+  end
+
+  def update
+    @review = Review.find(params[:id])
+
+    if @review.update_attributes(review_params)
+      redirect_to product_review_path
+    else
+      render :edit
+    end
+  end
+
+
+  def edit
+    @review = Review.find(params[:id])
   end
 
   private
