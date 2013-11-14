@@ -7,12 +7,11 @@
 
 <p>Review for: <%= @product.name %></p>
 
-
     <div class="review">
       <p> 
           <%= @review.comment %>
           <br>
-            <em> by <%= @review.user.name %></em>
-            Added on: <%= @review.created_at %>
+            <em> By <%= @review.user.email %></em>
+            <em>Added on:</em> <%= @review.created_at %>
       </p>
     </div>

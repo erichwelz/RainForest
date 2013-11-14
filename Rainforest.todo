@@ -1,9 +1,11 @@
-Done til start of 13 (adding authorization)
 https://github.com/bitmakerlabs/rainforest_rails_4/wiki/Tutorial
 
 Todo:
+add images via Paperclip
+add show new reviews first to Products/show/index
 
 Bootstrap CSS the appl. ala Hartl Tutorial
+
 
 
 Done:
